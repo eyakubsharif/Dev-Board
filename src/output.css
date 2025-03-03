@@ -10,6 +10,7 @@
     --color-gray-100: oklch(0.967 0.003 264.542);
     --color-gray-200: oklch(0.928 0.006 264.531);
     --color-gray-400: oklch(0.707 0.022 261.325);
+    --color-white: #fff;
     --spacing: 0.25rem;
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
@@ -349,6 +350,18 @@
       max-width: 96rem !important;
     }
   }
+  .m-5 {
+    margin: calc(var(--spacing) * 5);
+  }
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .ml-5 {
+    margin-left: calc(var(--spacing) * 5);
+  }
+  .ml-10 {
+    margin-left: calc(var(--spacing) * 10);
+  }
   .box-border {
     box-sizing: border-box;
   }
@@ -453,6 +466,18 @@
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
+  }
+  .w-11 {
+    width: calc(var(--spacing) * 11);
+  }
+  .w-11\/12 {
+    width: calc(11/12 * 100%);
+  }
+  .w-12 {
+    width: calc(var(--spacing) * 12);
+  }
+  .w-12\/12 {
+    width: calc(12/12 * 100%);
   }
   .w-screen {
     width: 100vw;
@@ -843,6 +868,9 @@
   .justify-items-stretch {
     justify-items: stretch;
   }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
   .space-y-reverse {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 1;
@@ -1078,6 +1106,9 @@
   .bg-red-500\/\[50\%\] {
     background-color: color-mix(in oklab, var(--color-red-500) 50%, transparent);
   }
+  .bg-white {
+    background-color: var(--color-white);
+  }
   .-bg-conic {
     --tw-gradient-position: in oklab;
     background-image: conic-gradient(var(--tw-gradient-stops));
@@ -1243,6 +1274,12 @@
   }
   .object-top {
     object-position: top;
+  }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
   }
   .text-center {
     text-align: center;
